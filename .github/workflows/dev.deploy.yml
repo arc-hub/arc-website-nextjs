@@ -31,9 +31,9 @@ jobs:
         env:
           CI: false
       - name: copy build to home
-        run: cp -R build/* .
+        run: cp -R .next/* .
       - name: delete build and node node_modules
-        run: rm -rf build node_modules
+        run: rm -rf .next node_modules
       - name: hard reset
         run: git reset --hard
       - name: stage changes
