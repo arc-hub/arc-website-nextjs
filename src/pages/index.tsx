@@ -34,6 +34,7 @@ export default function Home() {
                 width={100}
                 height={24}
                 priority
+                unoptimized
               />
             </a>
           </div>
@@ -47,6 +48,7 @@ export default function Home() {
             width={180}
             height={37}
             priority
+            unoptimized
           />
           <div className={styles.thirteen}>
             <Image
@@ -55,6 +57,7 @@ export default function Home() {
               width={40}
               height={31}
               priority
+              unoptimized
             />
           </div>
         </div>
