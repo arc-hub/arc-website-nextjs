@@ -1,0 +1,53 @@
+name: Development - Build and Deploy
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop]
+
+jobs:
+  development:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+      - run: echo Hello World
+      - name: Set up Node.js version
+        uses: actions/setup-node@v1
+        with:
+          node-version: '16.x'
+      - name: clean cache
+        run: npm cache clean --force
+      - name: delete package-lock.json
+        run: rm package-lock.json
+      - name: npm install
+        run: npm install --force
+      - name: install
+        run: npm ci --force
+      - name: build
+        run: npm run build
+        env:
+          CI: false
+      - name: copy build to home
+        run: cp -R build/* .
+      - name: delete build and node node_modules
+        run: rm -rf build node_modules
+      - name: hard reset
+        run: git reset --hard
+      - name: stage changes
+        run: git add .
+      - name: git email configuration
+        run: git config --global user.email "arc.developer@gmail.com"
+      - name: git name configuration
+        run: git config --global user.name "arc-hub"
+      - name: commit changes
+        run: git commit -m "new build"
+      - name: upload
+        uses: SamKirkland/FTP-Deploy-Action@4.3.3
+        with:
+          server: ftp.nl1-ss15.a2hosting.com
+          username: insightl
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: nextjsdev.ivyarc.com/
