@@ -32,8 +32,6 @@ jobs:
           CI: false
       - name: copy build to home
         run: cp -R .next/* .
-      - name: copy out to home
-        run: cp -R ./out .
       - name: delete build and node node_modules
         run: rm -rf .next node_modules
       - name: hard reset
