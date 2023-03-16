@@ -92,10 +92,10 @@ const WhyUs = () => {
               }}
             >
               You need the business team and we are ready to deliver. Just give
-              us a call and let's get talking with a varied range of
+              us a call and let&apos;s get talking with a varied range of
               professionals. ARC brings your perfect business team directly to
-              your doorstep. All you have to do is give us a call and let's get
-              started.
+              your doorstep. All you have to do is give us a call and let&apos;s
+              get started.
             </Typography>
           </Box>
           <Box sx={{ width: { xs: '100%', sm: '50%' }, padding: '1rem 0rem' }}>

@@ -391,8 +391,8 @@ export const events = [
   {
     image: require('../assets/Frame 44093 (2).png'),
     title: 'Software Engineering Foundation',
-    date: 'December 9th 2022',
-    fee: 'N35,000',
+    date: '1st May 2023',
+    fee: 'Free',
     note: 'Learn More',
     keyword: 'SEF',
   },
@@ -426,7 +426,7 @@ export const ourAcademy = [
   {
     image: require('../assets/data-analysis.png'),
     title: 'Software Engineering Foundation',
-    date: 'December 9th 2022',
+    date: '1st May 2023',
     duration: '12 Weeks',
     note: 'Click to register',
     button: 'SEF',
