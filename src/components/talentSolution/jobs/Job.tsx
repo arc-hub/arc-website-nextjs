@@ -42,18 +42,13 @@ const Job = ({ job, page }: JobProps) => {
             alignItems: 'center',
           }}
         >
-          {/* <Avatar
-            alt={job?.company_name}
-            src={job?.company_logo}
-            sx={{ width: '24px', height: '24px' }}
-          /> */}
           <Box
             sx={{
               position: 'relative',
             }}
           >
             <Image
-              src={`https://edgeapidev.ivyarc.com/v1/storage/images/${job.company_logo}`}
+              src={`https://edgeapi.ivyarc.com/v1/storage/images/${job.company_logo}`}
               alt={job.company_name}
               width={30}
               height={30}
