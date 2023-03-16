@@ -102,7 +102,13 @@ const Layout = ({ children }: LayoutProps) => {
   return (
     <ThemeProvider theme={theme}>
       <SyllabusContextProvider>
-        <main style={{ position: 'relative', minHeight: '100vh' }}>
+        <main
+          style={{
+            position: 'relative',
+            minHeight: '100vh',
+            backgroundColor: '#FFFFFF',
+          }}
+        >
           <Toaster />
           <CssBaseline />
           {children}
