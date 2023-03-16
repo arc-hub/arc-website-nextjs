@@ -241,7 +241,7 @@ export const paymentOptions = [
 
 export const happyClients = [
   {
-    avatar: require('../assets/1664928831889.jpg'),
+    avatar: require('../assets/1664928831889.webp'),
     name: 'Kenneth Aladi',
     rating: 5,
     comment:
@@ -249,7 +249,7 @@ export const happyClients = [
     position: 'Consultant',
   },
   {
-    avatar: require('../assets/ugbotor Emmanuel.jpeg'),
+    avatar: require('../assets/ugbotor Emmanuel.webp'),
     name: 'Ugbotor Emmanuel',
     rating: 5,
     comment:
