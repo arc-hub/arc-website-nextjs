@@ -1,13 +1,15 @@
 import { Box } from '@mui/material'
-import Clients from 'components/homepage/Clients'
-import Events from 'components/homepage/Events'
-import Ivyarc from 'components/homepage/Ivyarc'
-import Talent from 'components/homepage/Talent'
-import Testimonials from 'components/homepage/Testimonials'
-import TopCourses from 'components/homepage/TopCourses'
-import WhyUs from 'components/homepage/WhyUs'
-import Banner from 'components/homepage/banner'
-import RecentBlogs from 'components/homepage/recentBlogs'
+import {
+  Banner,
+  Clients,
+  Events,
+  Ivyarc,
+  RecentBlogs,
+  Talent,
+  Testimonials,
+  TopCourses,
+  WhyUs,
+} from 'components/homepage'
 import Footer from 'components/ui/Footer'
 import Navbar from 'components/ui/Navbar'
 import OpenDayModal from 'components/ui/OpenDayModal'
