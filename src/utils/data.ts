@@ -161,20 +161,24 @@ export const courses = [
 
 export const commitmentLevels = [
   {
-    label: '50%',
-    value: '50%',
+    label: '10%-30%',
+    value: '10%-30%',
   },
   {
-    label: '70%',
-    value: '70%',
+    label: '31%-50%',
+    value: '31%-50%',
   },
   {
-    label: '90%',
-    value: '90%',
+    label: '51%-70%',
+    value: '51%-70%',
   },
   {
-    label: '100%',
-    value: '100%',
+    label: '71%-90%',
+    value: '71%-90%',
+  },
+  {
+    label: '91%-100%',
+    value: '91%-100%',
   },
 ]
 
