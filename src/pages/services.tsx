@@ -3,10 +3,7 @@ import Box from '@mui/material/Box'
 import RegistrationModal from 'components/ui/ReservationModal'
 import Head from 'next/head'
 import Footer from 'components/ui/Footer'
-import Header from 'components/services/Header'
-import Section1 from 'components/services/Section1'
-import Section2 from 'components/services/Section2'
-import Section3 from 'components/services/Section3'
+import { Header, Section1, Section2, Section3 } from 'components/services'
 
 export const Services = () => {
   const [showModal, setShowModal] = useState(false)
