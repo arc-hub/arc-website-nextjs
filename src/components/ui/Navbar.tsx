@@ -15,8 +15,8 @@ import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 type NavbarProps = {
-  page: string
-  textColor: string
+  page?: string
+  textColor?: string
 }
 
 const Navbar = ({ page, textColor }: NavbarProps) => {
