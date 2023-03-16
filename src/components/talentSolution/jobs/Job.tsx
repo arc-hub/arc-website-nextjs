@@ -49,7 +49,7 @@ const Job = ({ job, page }: JobProps) => {
           >
             <Image
               src={`https://edgeapi.ivyarc.com/v1/storage/images/${job.company_logo}`}
-              alt={job.company_name}
+              alt=""
               width={30}
               height={30}
               crossOrigin="anonymous"
