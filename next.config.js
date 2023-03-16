@@ -4,6 +4,11 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
+    domains: [
+      'https://edgeapi.ivyarc.com',
+      'https://edgeapidev.ivyarc.com',
+      'https://res.cloudinary.com',
+    ],
   },
 }
 
