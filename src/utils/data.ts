@@ -84,7 +84,7 @@ export const testimonials = [
 export const sefTestimonials = [
   {
     id: 1,
-    image: require('../assets/Abai.jpg'),
+    image: require('../assets/Abai.webp'),
     name: 'Abai Ayomikun Adekanmi',
     quote:
       "The journey was great. I'm really glad that I've grown so much within the little space of time. The transition course was an eye-opener, I was grounded in the foundation of software engineering though it was quite challenging from the task down to the group project, and yes all that work really showed and I'm glad about my progress. Big thanks to the team of IVYARC.",

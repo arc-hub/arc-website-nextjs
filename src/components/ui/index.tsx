@@ -6,6 +6,7 @@ import SyllabusModal from './SyllabusModal'
 import Clients from './Clients'
 import TopCourses from './TopCourses'
 import Alumni from './alumni'
+import Benefits from './Benefits'
 
 export {
   Navbar,
@@ -16,4 +17,5 @@ export {
   Clients,
   TopCourses,
   Alumni,
+  Benefits,
 }
