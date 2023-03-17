@@ -152,7 +152,7 @@ export const Section1 = () => {
               }}
             >
               Linear helps streamline software projects, sprints, tasks, and bug
-              tracking. Here's how to get started.
+              tracking. Here&apos;s how to get started.
             </Typography>
             <Box display="flex" marginTop="1rem">
               <Typography
@@ -292,7 +292,7 @@ export const Section1 = () => {
               }}
             >
               Linear helps streamline software projects, sprints, tasks, and bug
-              tracking. Here's how to get started.
+              tracking. Here&apos;s how to get started.
             </Typography>
             <Box display="flex" marginTop="1rem">
               <Typography
