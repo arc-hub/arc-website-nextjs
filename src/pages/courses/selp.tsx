@@ -1,12 +1,6 @@
-import { useState, useEffect, useRef } from 'react'
+import { useState, useEffect } from 'react'
 import Box from '@mui/material/Box'
 import Head from 'next/head'
-import {
-  Faq,
-  Jumbotron,
-  ProgrammeDetails,
-  RegistrationModal,
-} from 'components/sef'
 import {
   Alumni,
   Benefits,
@@ -18,41 +12,32 @@ import {
   SyllabusModal,
   TopCourses,
 } from 'components/ui'
+import {
+  Experience,
+  Faq,
+  Jumbotron,
+  ProgrammeDetails,
+  RegistrationModal,
+} from 'components/selp'
 
-const Sef = () => {
+const Selp = () => {
   const [showModal, setShowModal] = useState<boolean>(false)
   const [showSyllabusModal, setShowSyllabusModal] = useState<boolean>(false)
   const [showOpendayModal, setShowOpendayModal] = useState<boolean>(false)
   const [showRegistrationModal, setShowRegistrationModal] =
     useState<boolean>(false)
-  const [scrollIntoView, setScrollIntoView] = useState<boolean>(false)
-
-  const faqRef = useRef<HTMLDivElement | null>(null)
-
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setShowModal(true)
-  //   }, 3000)
-  //   return () => clearTimeout(timer)
-  // }, [])
 
   useEffect(() => {
-    const scrollToFaq = () => {
-      if (scrollIntoView) {
-        faqRef.current?.scrollIntoView({
-          behavior: 'smooth',
-        })
-        setScrollIntoView(false)
-      }
-    }
-
-    scrollToFaq()
-  }, [scrollIntoView])
+    const timer = setTimeout(() => {
+      setShowModal(true)
+    }, 3000)
+    return () => clearTimeout(timer)
+  }, [])
 
   return (
     <Box sx={{ margin: '0px', padding: '0px', cursor: 'default' }}>
       <Head>
-        <title>ARC Digital | SEF</title>
+        <title>ARC Digital | SELP</title>
       </Head>
 
       {/**modals */}
@@ -68,8 +53,7 @@ const Sef = () => {
       <RegistrationModal
         showRegistrationModal={showRegistrationModal}
         setShowRegistrationModal={setShowRegistrationModal}
-        api="sef"
-        setScrollIntoView={setScrollIntoView}
+        api="users"
       />
 
       {/**header */}
@@ -100,8 +84,11 @@ const Sef = () => {
       {/**alumni */}
       <Alumni />
 
+      {/**experience */}
+      <Experience />
+
       {/**faq */}
-      <Faq faqRef={faqRef} />
+      <Faq />
 
       {/**footer */}
       <Footer />
@@ -109,4 +96,4 @@ const Sef = () => {
   )
 }
 
-export default Sef
+export default Selp

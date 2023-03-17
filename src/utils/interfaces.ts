@@ -45,3 +45,26 @@ export interface IsSefFormikValues {
   hear_about_programme: string
   receive_communication: boolean
 }
+
+export interface ISelpFormikValues {
+  first_name: string
+  last_name: string
+  email: string
+  github: string
+  experience: string
+  commitment_level: string
+  course: string
+  phone: string
+  stacks: string[]
+  expectations_post_training: string
+  about_yourself: string
+  motivation: string
+  staying_motivated: string
+  expectations_during_training: string
+  computer_access: string
+  hear_about_programme: string
+  funding: string
+  payment_period: string
+  payment_option: string
+  receive_communication: boolean
+}
