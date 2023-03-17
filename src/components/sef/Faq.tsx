@@ -93,7 +93,7 @@ const Faq = ({ faqRef }: FaqProps) => {
             id="panel2a-header"
           >
             <Typography variant="subtitle2" fontWeight="700">
-              What is the course's duration?
+              What is the course&apos;s duration?
             </Typography>
           </AccordionSummary>
           <AccordionDetails>

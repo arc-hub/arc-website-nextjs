@@ -310,8 +310,8 @@ const Learning = () => {
           <Typography variant="body2">
             To finalize the CSS experience, you will learn the theory and
             application of Responsive Design, used to create highly flexible
-            webpages that can adapt to your user's devices, like their tablets,
-            PCs, and mobile phones.
+            webpages that can adapt to your user&apos;s devices, like their
+            tablets, PCs, and mobile phones.
           </Typography>
         </Box>
       </Box>
@@ -352,10 +352,10 @@ const Learning = () => {
           </Typography>
           <Typography variant="body2">
             Your website development skills are about to jump up a notch with
-            this week's topic - JavaScript. This will teach you how to implement
-            various complex functionality into your website, creating a more
-            dynamic experience. A core staple of any web developer that's worth
-            their salt.
+            this week&apos;s topic - JavaScript. This will teach you how to
+            implement various complex functionality into your website, creating
+            a more dynamic experience. A core staple of any web developer
+            that&apos;s worth their salt.
           </Typography>
         </Box>
       </Box>
