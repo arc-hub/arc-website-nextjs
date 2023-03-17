@@ -1,17 +1,15 @@
 import { useRef } from 'react'
 import Box from '@mui/material/Box'
 import Head from 'next/head'
-import Navbar from 'components/ui/Navbar'
 import {
   Benefits,
-  Clients,
   Faq,
   FindTalent,
   Jobs,
   Jumbotron,
   Testimonials,
 } from 'components/talentSolution'
-import Footer from 'components/ui/Footer'
+import { Clients, Footer, Navbar } from 'components/ui'
 
 const TalentSolution = () => {
   const talentRef = useRef<HTMLDivElement | null>(null)

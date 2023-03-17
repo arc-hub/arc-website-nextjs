@@ -1,7 +1,6 @@
 import Box from '@mui/material/Box'
 import { Section1, Section2 } from 'components/contactUs'
-import Footer from 'components/ui/Footer'
-import Navbar from 'components/ui/Navbar'
+import { Footer, Navbar } from 'components/ui'
 import Head from 'next/head'
 
 export const ContactUs = () => {

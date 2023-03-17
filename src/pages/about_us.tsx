@@ -1,6 +1,6 @@
 import { Box } from '@mui/material'
 import { Header, Section1, Section2, Section3 } from 'components/aboutUs'
-import Footer from 'components/ui/Footer'
+import { Footer } from 'components/ui'
 import Head from 'next/head'
 
 export const AboutUs = () => {
