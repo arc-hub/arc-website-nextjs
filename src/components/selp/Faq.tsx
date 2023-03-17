@@ -146,8 +146,8 @@ const Faq = () => {
           </AccordionSummary>
           <AccordionDetails>
             <Typography variant="body2">
-              Simply click the 'Apply Now' button, tell us a bit about yourself,
-              pay your registration fee, and you're good to go.
+              Simply click the &apos;Apply Now&apos; button, tell us a bit about
+              yourself, pay your registration fee, and you&apos;re good to go.
             </Typography>
           </AccordionDetails>
         </Accordion>
