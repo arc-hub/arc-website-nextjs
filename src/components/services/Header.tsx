@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box'
 import Typography from '@mui/material/Typography'
-import Navbar from 'components/ui/Navbar'
+import { Navbar } from 'components/ui'
 import Image from 'next/image'
 
 export const Header = () => {

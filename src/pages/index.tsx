@@ -1,19 +1,21 @@
 import { Box } from '@mui/material'
 import {
   Banner,
-  Clients,
   Events,
   Ivyarc,
   RecentBlogs,
   Talent,
   Testimonials,
-  TopCourses,
   WhyUs,
 } from 'components/homepage'
-import Footer from 'components/ui/Footer'
-import Navbar from 'components/ui/Navbar'
-import OpenDayModal from 'components/ui/OpenDayModal'
-import SyllabusModal from 'components/ui/SyllabusModal'
+import {
+  Clients,
+  Footer,
+  Navbar,
+  OpenDayModal,
+  SyllabusModal,
+  TopCourses,
+} from 'components/ui'
 import Head from 'next/head'
 import { useState } from 'react'
 

@@ -1,11 +1,11 @@
 import { Box, Button, MenuItem, TextField, Typography } from '@mui/material'
 import * as yup from 'yup'
 import { useFormik, FormikProps } from 'formik'
-import Navbar from 'components/ui/Navbar'
 import Head from 'next/head'
 import { toast } from 'react-hot-toast'
 import axios from 'api/axios'
 import { interviewerLinks } from 'utils/data'
+import { Navbar } from 'components/ui'
 
 const validationSchema = yup.object().shape({
   name: yup

@@ -77,7 +77,7 @@ const validationSchema = yup.object().shape({
   course: yup.string().required('This field is required'),
 })
 
-type RegistrationModalProps = {
+type ReservationModalProps = {
   showModal: boolean
   setShowModal: (val: boolean) => void
 }
@@ -90,10 +90,10 @@ interface FormikValues {
   course: string
 }
 
-const RegistrationModal = ({
+const ReservationModal = ({
   showModal,
   setShowModal,
-}: RegistrationModalProps) => {
+}: ReservationModalProps) => {
   const formik: FormikProps<FormikValues> = useFormik<FormikValues>({
     initialValues: {
       first_name: '',
@@ -115,7 +115,6 @@ const RegistrationModal = ({
           course: values.course,
         })
         .catch((error) => {
-          // console.error(error.response.data.message)
           toast.error(error.response.message, {
             duration: 5000,
             position: 'top-right',
@@ -138,6 +137,7 @@ const RegistrationModal = ({
         open={showModal}
         onClose={() => setShowModal(false)}
         aria-labelledby="modal-modal-title"
+        disableScrollLock
       >
         <Box sx={style}>
           <IconButton
@@ -282,4 +282,4 @@ const RegistrationModal = ({
   )
 }
 
-export default RegistrationModal
+export default ReservationModal

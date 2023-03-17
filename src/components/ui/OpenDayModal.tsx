@@ -140,6 +140,7 @@ const OpenDayModal = ({
           setShowOpendayModal(false)
         }}
         aria-labelledby="modal-modal-title"
+        disableScrollLock
       >
         <Box sx={style}>
           <IconButton

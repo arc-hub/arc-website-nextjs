@@ -25,3 +25,23 @@ export interface IsClient {
   comment: string
   position: string
 }
+
+export interface IsSefFormikValues {
+  first_name: string
+  last_name: string
+  email: string
+  github: string
+  experience: string
+  commitment_level: string
+  course: string
+  phone: string
+  skills: string[]
+  about_yourself: string
+  expectations_post_training: string
+  motivation: string
+  staying_motivated: string
+  expectations_during_training: string
+  computer_access: string
+  hear_about_programme: string
+  receive_communication: boolean
+}
