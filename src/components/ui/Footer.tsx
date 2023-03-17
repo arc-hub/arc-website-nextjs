@@ -208,10 +208,14 @@ const Footer = () => {
             size="small"
             placeholder="Enter your email address"
             sx={{
-              backgroundColor: '#FFFFFF',
-              borderRadius: '0.5rem',
               mt: '1rem',
+              '& .MuiOutlinedInput-root': {
+                backgroundColor: '#FFFFFF',
+                borderRadius: '0.5rem',
+              },
             }}
+            error={formik.touched.email && Boolean(formik.errors.email)}
+            helperText={formik.touched.email && formik.errors.email}
           />
           <Button
             variant="contained"
