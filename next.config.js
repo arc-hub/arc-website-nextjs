@@ -10,6 +10,7 @@ const nextConfig = {
       'https://res.cloudinary.com',
     ],
   },
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
