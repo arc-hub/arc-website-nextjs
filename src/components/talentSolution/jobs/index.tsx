@@ -50,7 +50,7 @@ const Jobs = () => {
         <Button
           variant="text"
           sx={{ color: '#FF7801', textTransform: 'none' }}
-          onClick={() => router.push('jobs')}
+          onClick={() => router.push('talent_solution/jobs')}
         >
           View All
         </Button>

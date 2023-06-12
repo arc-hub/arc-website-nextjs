@@ -131,6 +131,7 @@ export const Section1 = () => {
             src={require('../../assets/image 28.png')}
             alt=""
             style={{ width: '100%', height: 'auto' }}
+            priority
           />
         </Box>
         <Box

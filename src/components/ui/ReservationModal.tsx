@@ -160,6 +160,7 @@ const ReservationModal = ({
               src={require('../../assets/Customer.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              priority
             />
           </Box>
           <Typography

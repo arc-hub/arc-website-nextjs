@@ -13,7 +13,12 @@ const ComingSoon = () => {
         alignItems: 'center',
       }}
     >
-      <Image src={comingSoon} alt="" style={{ width: '50%', height: 'auto' }} />
+      <Image
+        src={require('../../assets/27282.webp')}
+        alt=""
+        style={{ width: '50%', height: 'auto' }}
+        priority
+      />
     </Box>
   )
 }

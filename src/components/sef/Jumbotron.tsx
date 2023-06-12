@@ -116,7 +116,7 @@ const Jumbotron = ({
           src={require('../../assets/Frame 12.webp')}
           alt=""
           style={{ width: '100%', height: 'auto' }}
-          loading="lazy"
+          priority
         />
       </Box>
     </Box>

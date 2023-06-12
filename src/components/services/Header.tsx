@@ -146,6 +146,7 @@ export const Header = () => {
             src={require('../../assets/Frame 43998.png')}
             alt=""
             style={{ width: '100%', height: 'auto' }}
+            priority
           />
         </Box>
       </Box>

@@ -54,6 +54,7 @@ const Job = ({ job, page }: JobProps) => {
               height={30}
               crossOrigin="anonymous"
               style={{ borderRadius: '50%', objectFit: 'fill' }}
+              loading="lazy"
             />
           </Box>
 

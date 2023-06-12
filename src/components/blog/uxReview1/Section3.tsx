@@ -58,6 +58,7 @@ export const Section3 = () => {
                 src={require('../../../assets/bimage7.png')}
                 alt=""
                 style={{ width: '100%', height: 'auto' }}
+                loading="lazy"
               />
             </Box>
             <Box
@@ -122,6 +123,7 @@ export const Section3 = () => {
                 src={require('../../../assets/bimage8.png')}
                 alt=""
                 style={{ width: '100%', height: 'auto' }}
+                loading="lazy"
               />
             </Box>
             <Box
@@ -199,6 +201,7 @@ export const Section3 = () => {
                   src={require('../../../assets/bimage9.png')}
                   alt=""
                   style={{ width: '100%', height: 'auto' }}
+                  loading="lazy"
                 />
               </Box>
               <Box
@@ -264,6 +267,7 @@ export const Section3 = () => {
                   src={require('../../../assets/bimage10.png')}
                   alt=""
                   style={{ width: '100%', height: 'auto' }}
+                  loading="lazy"
                 />
               </Box>
               <Box

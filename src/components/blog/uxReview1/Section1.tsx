@@ -45,6 +45,7 @@ export const Section1 = () => {
           src={require('../../../assets/Office1.png')}
           alt=""
           style={{ width: '100%', height: 'auto' }}
+          priority
         />
       </Box>
       <Typography
@@ -86,6 +87,7 @@ export const Section1 = () => {
           src={require('../../../assets/Office2.png')}
           alt=""
           style={{ width: '100%', height: 'auto' }}
+          loading="lazy"
         />
       </Box>
       <Box marginTop="3rem" borderLeft="3px solid #6941C6">
@@ -221,6 +223,7 @@ export const Section1 = () => {
           src={require('../../../assets/Office3.png')}
           alt=""
           style={{ width: '100%', height: 'auto' }}
+          loading="lazy"
         />
       </Box>
       <Typography

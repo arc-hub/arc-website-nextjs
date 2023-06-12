@@ -101,6 +101,7 @@ const Jumbotron = ({ talentRef }: JumbotronProps) => {
           src={require('../../assets/Frame 44031.png')}
           alt=""
           style={{ width: '100%', height: 'auto' }}
+          priority
         />
       </Box>
     </Box>

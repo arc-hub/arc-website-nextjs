@@ -142,6 +142,7 @@ export const Section3 = () => {
               src={require('../../assets/image 27.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              loading="lazy"
             />
           </Box>
 
@@ -171,6 +172,7 @@ export const Section3 = () => {
               src={require('../../assets/Frame 44012.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              loading="lazy"
             />
           </Box>
         </Box>

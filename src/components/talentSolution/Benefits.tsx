@@ -130,6 +130,7 @@ const Benefits = ({ testimonialsRef }: BenefitsProp) => {
             src={require('../../assets/image 35.png')}
             alt=""
             style={{ width: '100%', height: 'auto' }}
+            loading="lazy"
           />
         </Box>
       </Box>

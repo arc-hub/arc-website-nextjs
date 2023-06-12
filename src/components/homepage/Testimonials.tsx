@@ -111,6 +111,7 @@ const Testimonials = () => {
                       height: '100%',
                       objectFit: 'contain',
                     }}
+                    loading="lazy"
                   />
                 </Box>
               </Box>

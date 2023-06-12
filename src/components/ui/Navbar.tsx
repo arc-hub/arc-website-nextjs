@@ -132,8 +132,9 @@ const Navbar = ({ page, textColor }: NavbarProps) => {
             disableScrollLock={true}
             MenuListProps={{
               'aria-labelledby': 'basic-button',
+              sx: { padding: '0px' },
             }}
-            sx={{ display: { xs: 'none', md: 'flex' } }}
+            sx={{ display: { xs: 'none', md: 'flex' }, marginTop: '8px' }}
             anchorOrigin={{
               vertical: 'bottom',
               horizontal: 'right',

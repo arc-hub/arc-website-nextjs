@@ -73,6 +73,7 @@ const Talent = () => {
               src={require('../../assets/Frame 44130.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              loading="lazy"
             />
           </Box>
           <Box
@@ -94,7 +95,7 @@ const Talent = () => {
                   objectFit: 'contain',
                   borderRadius: '1.25rem 1.25rem 0rem 0rem',
                 }}
-                priority
+                loading="lazy"
               />
             </Box>
 

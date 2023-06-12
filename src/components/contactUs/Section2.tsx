@@ -63,6 +63,7 @@ export const Section2 = () => {
               src={require('../../assets/Email.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              loading="lazy"
             />
           </Box>
           <Typography
@@ -132,6 +133,7 @@ export const Section2 = () => {
               src={require('../../assets/Phone.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              loading="lazy"
             />
           </Box>
           <Typography
@@ -203,6 +205,7 @@ export const Section2 = () => {
             src={require('../../assets/Location.png')}
             alt=""
             style={{ width: '100%', height: 'auto' }}
+            loading="lazy"
           />
         </Box>
         <Typography

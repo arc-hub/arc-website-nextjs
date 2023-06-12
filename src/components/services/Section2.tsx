@@ -108,6 +108,7 @@ export const Section2 = ({ setShowModal, setCourse }: Section2Props) => {
                     src={item.image}
                     alt=""
                     style={{ width: '100%', height: 'auto' }}
+                    loading="lazy"
                   />
                   <Box sx={{ height: '90px' }}>
                     <Typography
