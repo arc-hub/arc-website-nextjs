@@ -9,7 +9,7 @@ import Job from './Job'
 
 const Jobs = () => {
   const router = useRouter()
-  const { data, error } = useSWR<IsJob[]>('jobs', fetcher)
+  const { data, error, isLoading } = useSWR<IsJob[]>('jobs', fetcher)
 
   if (error) {
     console.error(error)
@@ -35,9 +35,14 @@ const Jobs = () => {
         sx={{
           mt: '2rem',
           mx: 'auto',
-          display: 'flex',
-          flexWrap: 'wrap',
-          justifyContent: { xs: 'center', sm: 'start' },
+          display: 'grid',
+          gridTemplateColumns: {
+            xs: '1fr',
+            sm: '1fr 1fr',
+            md: '1fr 1fr 1fr',
+            lg: '1fr 1fr 1fr 1fr',
+          },
+          gridGap: '1.5rem',
           width: '100%',
         }}
       >
@@ -46,7 +51,7 @@ const Jobs = () => {
         ))}
       </Box>
 
-      <Box sx={{ display: 'flex', justifyContent: 'right' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'right', mt: '1.5rem' }}>
         <Button
           variant="text"
           sx={{ color: '#FF7801', textTransform: 'none' }}
