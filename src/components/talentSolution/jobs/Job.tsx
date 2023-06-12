@@ -123,10 +123,9 @@ const Job = ({ job, page }: JobProps) => {
         </Box> */}
 
         <Link
-          href={`https://edge.ivyarc.com/home-job-description/${job?.job_title.replace(
-            '/',
-            '___'
-          )} at ${job?.company_name}`}
+          href={`https://edge.ivyarc.com/home-job-description/${
+            job.id
+          }/${job?.job_title.replace('/', '___')} at ${job?.company_name}`}
           underline="none"
           target="_blank"
         >

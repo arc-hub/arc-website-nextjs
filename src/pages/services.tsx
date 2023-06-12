@@ -5,7 +5,8 @@ import { Header, Section1, Section2, Section3 } from 'components/services'
 import { Footer, ReservationModal } from 'components/ui'
 
 export const Services = () => {
-  const [showModal, setShowModal] = useState(false)
+  const [showModal, setShowModal] = useState<boolean>(false)
+  const [course, setCourse] = useState<string>('')
 
   return (
     <Box>
@@ -13,10 +14,14 @@ export const Services = () => {
         <title>ARC Digital | Services</title>
       </Head>
 
-      <ReservationModal showModal={showModal} setShowModal={setShowModal} />
+      <ReservationModal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        course={course}
+      />
       <Header />
       <Section1 />
-      <Section2 setShowModal={setShowModal} />
+      <Section2 setShowModal={setShowModal} setCourse={setCourse} />
       <Section3 />
       <Footer />
     </Box>
