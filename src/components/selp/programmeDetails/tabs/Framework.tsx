@@ -15,7 +15,7 @@ const Framework = ({ setShowSyllabusModal }: FrameworkProps) => {
   const syllabusContext = useContext(SyllabusContext)
 
   return (
-    <Box>
+    <Box sx={{ color: '#000000' }}>
       <Typography
         variant="body1"
         gutterBottom
@@ -129,8 +129,11 @@ const Framework = ({ setShowSyllabusModal }: FrameworkProps) => {
         Programme Timeline
       </Typography>
       <Typography variant="body2" gutterBottom>
-        A 12-week programme divided into eight key learning modules.
+        Coming Soon
       </Typography>
+      {/* <Typography variant="body2" gutterBottom>
+        A 12-week programme divided into eight key learning modules.
+      </Typography> */}
       <Typography
         variant="body1"
         gutterBottom

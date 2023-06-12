@@ -5,11 +5,17 @@ import Image from 'next/image'
 
 type WorkProps = {
   setShowRegistrationModal: (val: boolean) => void
+  setShowModal: (val: boolean) => void
+  setCourse: (val: string) => void
 }
 
-const Works = ({ setShowRegistrationModal }: WorkProps) => {
+const Works = ({
+  setShowRegistrationModal,
+  setShowModal,
+  setCourse,
+}: WorkProps) => {
   return (
-    <Box>
+    <Box sx={{ color: '#000000' }}>
       <Typography
         variant="body1"
         gutterBottom
@@ -68,7 +74,7 @@ const Works = ({ setShowRegistrationModal }: WorkProps) => {
           </Box>
         </Box>
 
-        <Button
+        {/* <Button
           sx={{
             margin: '1rem 0rem 0rem 2.75rem',
             backgroundColor: '#002E5F',
@@ -78,6 +84,20 @@ const Works = ({ setShowRegistrationModal }: WorkProps) => {
           onClick={() => setShowRegistrationModal(true)}
         >
           Enroll Now
+        </Button> */}
+        <Button
+          sx={{
+            margin: '1rem 0rem 0rem 2.75rem',
+            backgroundColor: '#002E5F',
+            padding: '0.5rem 3.5rem',
+          }}
+          variant="contained"
+          onClick={() => {
+            setShowModal(true)
+            setCourse('Software Engineering Foundation')
+          }}
+        >
+          Book a Slot
         </Button>
       </Box>
     </Box>

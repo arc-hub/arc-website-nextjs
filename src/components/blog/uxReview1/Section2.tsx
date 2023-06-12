@@ -28,7 +28,11 @@ export const Section2 = () => {
       >
         <Box display="flex">
           <Box>
-            <Image src={require('../../../assets/Olivia.png')} alt="" />
+            <Image
+              src={require('../../../assets/Olivia.png')}
+              alt=""
+              loading="lazy"
+            />
           </Box>
           <Box padding="0.3rem 0rem 0rem 1rem">
             <Typography variant="body1" fontFamily="Inter" fontWeight="600">

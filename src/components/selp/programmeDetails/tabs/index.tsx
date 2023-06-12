@@ -50,11 +50,15 @@ function a11yProps(index: number) {
 type BasicTabsProps = {
   setShowSyllabusModal: (val: boolean) => void
   setShowRegistrationModal: (val: boolean) => void
+  setCourse: (val: string) => void
+  setShowModal: (val: boolean) => void
 }
 
 export default function BasicTabs({
   setShowSyllabusModal,
   setShowRegistrationModal,
+  setCourse,
+  setShowModal,
 }: BasicTabsProps) {
   const [value, setValue] = useState<number>(0)
 
@@ -107,6 +111,7 @@ export default function BasicTabs({
                     xs: 'none',
                     sm: 'block',
                   },
+                  color: '#000000',
                 }}
               >
                 <Typography variant="body2">Overview</Typography>
@@ -122,6 +127,7 @@ export default function BasicTabs({
                     xs: 'flex',
                     sm: 'none',
                   },
+                  color: '#000000',
                 }}
               >
                 <Tooltip title="Overview">
@@ -142,6 +148,7 @@ export default function BasicTabs({
                     xs: 'none',
                     sm: 'block',
                   },
+                  color: '#000000',
                 }}
               >
                 <Typography variant="body2">Programme Framework</Typography>
@@ -157,6 +164,7 @@ export default function BasicTabs({
                     xs: 'flex',
                     sm: 'none',
                   },
+                  color: '#000000',
                 }}
               >
                 <Tooltip title="Programme Framework">
@@ -177,6 +185,7 @@ export default function BasicTabs({
                     xs: 'none',
                     sm: 'block',
                   },
+                  color: '#000000',
                 }}
               >
                 <Typography variant="body2">How it works</Typography>
@@ -192,6 +201,7 @@ export default function BasicTabs({
                     xs: 'flex',
                     sm: 'none',
                   },
+                  color: '#000000',
                 }}
               >
                 <Tooltip title="How it works">
@@ -212,6 +222,7 @@ export default function BasicTabs({
                     xs: 'none',
                     sm: 'block',
                   },
+                  color: '#000000',
                 }}
               >
                 <Typography variant="body2">Learning Journey</Typography>
@@ -227,6 +238,7 @@ export default function BasicTabs({
                     xs: 'flex',
                     sm: 'none',
                   },
+                  color: '#000000',
                 }}
               >
                 <Tooltip title="Learning Journey">
@@ -250,7 +262,11 @@ export default function BasicTabs({
       </TabPanel>
 
       <TabPanel value={value} index={2}>
-        <Works setShowRegistrationModal={setShowRegistrationModal} />
+        <Works
+          setShowRegistrationModal={setShowRegistrationModal}
+          setCourse={setCourse}
+          setShowModal={setShowModal}
+        />
       </TabPanel>
 
       <TabPanel value={value} index={3}>

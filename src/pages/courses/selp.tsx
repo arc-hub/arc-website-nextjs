@@ -26,13 +26,14 @@ const Selp = () => {
   const [showOpendayModal, setShowOpendayModal] = useState<boolean>(false)
   const [showRegistrationModal, setShowRegistrationModal] =
     useState<boolean>(false)
+  const [course, setCourse] = useState<string>('')
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowModal(true)
-    }, 3000)
-    return () => clearTimeout(timer)
-  }, [])
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     setShowModal(true)
+  //   }, 3000)
+  //   return () => clearTimeout(timer)
+  // }, [])
 
   return (
     <Box sx={{ margin: '0px', padding: '0px', cursor: 'default' }}>
@@ -41,7 +42,11 @@ const Selp = () => {
       </Head>
 
       {/**modals */}
-      <ReservationModal showModal={showModal} setShowModal={setShowModal} />
+      <ReservationModal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        course={course}
+      />
       <SyllabusModal
         showSyllabusModal={showSyllabusModal}
         setShowSyllabusModal={setShowSyllabusModal}
@@ -60,7 +65,11 @@ const Selp = () => {
       <Box sx={{ backgroundColor: '#E6EAEF' }}>
         <Navbar page="course" textColor="#1A1F2B" />
 
-        <Jumbotron setShowRegistrationModal={setShowRegistrationModal} />
+        <Jumbotron
+          setShowRegistrationModal={setShowRegistrationModal}
+          setShowModal={setShowModal}
+          setCourse={setCourse}
+        />
       </Box>
 
       {/**clients */}
@@ -70,6 +79,8 @@ const Selp = () => {
       <ProgrammeDetails
         setShowSyllabusModal={setShowSyllabusModal}
         setShowRegistrationModal={setShowRegistrationModal}
+        setCourse={setCourse}
+        setShowModal={setShowModal}
       />
 
       {/**benefits */}

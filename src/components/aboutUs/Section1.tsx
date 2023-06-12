@@ -93,6 +93,7 @@ export const Section1 = () => {
               src={require('../../assets/Frame 44037.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              loading="lazy"
             />
           </Box>
         </Box>

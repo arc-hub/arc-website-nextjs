@@ -80,6 +80,7 @@ const validationSchema = yup.object().shape({
 type ReservationModalProps = {
   showModal: boolean
   setShowModal: (val: boolean) => void
+  course: string
 }
 
 interface FormikValues {
@@ -93,6 +94,7 @@ interface FormikValues {
 const ReservationModal = ({
   showModal,
   setShowModal,
+  course,
 }: ReservationModalProps) => {
   const formik: FormikProps<FormikValues> = useFormik<FormikValues>({
     initialValues: {
@@ -100,8 +102,9 @@ const ReservationModal = ({
       last_name: '',
       email: '',
       phone: '',
-      course: '',
+      course: course,
     },
+    enableReinitialize: true,
     validationSchema: validationSchema,
     validateOnBlur: false,
     validateOnChange: false,
@@ -157,6 +160,7 @@ const ReservationModal = ({
               src={require('../../assets/Customer.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              priority
             />
           </Box>
           <Typography
@@ -243,6 +247,7 @@ const ReservationModal = ({
 
             {/**course */}
             <StyledTextField
+              disabled={course ? true : false}
               fullWidth
               size="small"
               variant="filled"
@@ -253,11 +258,6 @@ const ReservationModal = ({
               error={formik.touched.course && Boolean(formik.errors.course)}
               helperText={formik.touched.course && formik.errors.course}
               select
-              SelectProps={{
-                MenuProps: {
-                  disableScrollLock: true,
-                },
-              }}
               sx={{ mt: '1rem' }}
             >
               {courses.map((option) => (

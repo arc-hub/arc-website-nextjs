@@ -5,11 +5,15 @@ import BasicTabs from './tabs'
 type ProgrammeDetailsProps = {
   setShowSyllabusModal: (val: boolean) => void
   setShowRegistrationModal: (val: boolean) => void
+  setCourse: (val: string) => void
+  setShowModal: (val: boolean) => void
 }
 
 const ProgrammeDetails = ({
   setShowSyllabusModal,
   setShowRegistrationModal,
+  setCourse,
+  setShowModal,
 }: ProgrammeDetailsProps) => {
   return (
     <Box
@@ -39,6 +43,8 @@ const ProgrammeDetails = ({
       <BasicTabs
         setShowSyllabusModal={setShowSyllabusModal}
         setShowRegistrationModal={setShowRegistrationModal}
+        setCourse={setCourse}
+        setShowModal={setShowModal}
       />
     </Box>
   )

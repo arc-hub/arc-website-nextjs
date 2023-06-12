@@ -163,6 +163,7 @@ const FindTalent = ({ talentRef }: FindTalentProps) => {
             src={require('../../assets/Frame 44053.png')}
             alt=""
             style={{ width: '100%', height: 'auto' }}
+            loading="lazy"
           />
         </Box>
         <Box

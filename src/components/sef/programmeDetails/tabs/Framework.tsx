@@ -15,7 +15,7 @@ const Framework = ({ setShowSyllabusModal }: FrameworkProps) => {
   const syllabusContext = useContext(SyllabusContext)
 
   return (
-    <Box>
+    <Box sx={{ color: '#000000' }}>
       <Typography
         variant="body1"
         gutterBottom
@@ -123,11 +123,12 @@ const Framework = ({ setShowSyllabusModal }: FrameworkProps) => {
         Programme Timeline
       </Typography>
       <Typography variant="body2" gutterBottom>
-        1st of May 2023 - 21st of July 2023
+        {/* 1st of May 2023 - 21st of July 2023 */}
+        Coming Soon
       </Typography>
-      <Typography variant="body2" gutterBottom>
+      {/* <Typography variant="body2" gutterBottom>
         12-week course that covers three key learning modules.
-      </Typography>
+      </Typography> */}
 
       <Typography
         variant="body1"

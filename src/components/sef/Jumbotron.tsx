@@ -6,9 +6,15 @@ import { useRouter } from 'next/router'
 
 type JumbotronProps = {
   setShowRegistrationModal: (val: boolean) => void
+  setShowModal: (val: boolean) => void
+  setCourse: (val: string) => void
 }
 
-const Jumbotron = ({ setShowRegistrationModal }: JumbotronProps) => {
+const Jumbotron = ({
+  setShowRegistrationModal,
+  setShowModal,
+  setCourse,
+}: JumbotronProps) => {
   const router = useRouter()
 
   return (
@@ -69,6 +75,17 @@ const Jumbotron = ({ setShowRegistrationModal }: JumbotronProps) => {
             textAlign: { xs: 'center', sm: 'left' },
           }}
         >
+          {/* <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "#002E5F",
+              textTransform: "none",
+              padding: "0.5rem 3.5rem",
+            }}
+            onClick={() => setShowRegistrationModal(true)}
+          >
+            Apply Now
+          </Button> */}
           <Button
             variant="contained"
             sx={{
@@ -76,9 +93,12 @@ const Jumbotron = ({ setShowRegistrationModal }: JumbotronProps) => {
               textTransform: 'none',
               padding: '0.5rem 3.5rem',
             }}
-            onClick={() => setShowRegistrationModal(true)}
+            onClick={() => {
+              setShowModal(true)
+              setCourse('Software Engineering Foundation')
+            }}
           >
-            Apply Now
+            Book a Slot
           </Button>
         </Box>
       </Box>
@@ -93,9 +113,10 @@ const Jumbotron = ({ setShowRegistrationModal }: JumbotronProps) => {
         }}
       >
         <Image
-          src={require('../../assets/Frame 12.png')}
+          src={require('../../assets/Frame 12.webp')}
           alt=""
           style={{ width: '100%', height: 'auto' }}
+          priority
         />
       </Box>
     </Box>

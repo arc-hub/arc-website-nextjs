@@ -83,7 +83,7 @@ const Ivyarc = () => {
             src={require('../../assets/Frame 1983.png')}
             alt=""
             style={{ height: 'auto', width: '100%' }}
-            priority
+            loading="lazy"
           />
         </Box>
       </Box>

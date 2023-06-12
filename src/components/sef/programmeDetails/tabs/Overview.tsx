@@ -6,7 +6,7 @@ import ListItemText from '@mui/material/ListItemText'
 
 const Overview = () => {
   return (
-    <Box>
+    <Box sx={{ color: '#000000' }}>
       <Typography
         variant="body1"
         gutterBottom

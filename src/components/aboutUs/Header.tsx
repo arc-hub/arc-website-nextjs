@@ -39,6 +39,7 @@ export const Header = () => {
             src={require('../../assets/Ellipse 5.png')}
             alt=""
             style={{ height: '100%', width: 'auto' }}
+            priority
           />
         </Box>
         <Box
@@ -102,6 +103,7 @@ export const Header = () => {
             src={require('../../assets/Spike.png')}
             alt=""
             style={{ width: '100%', height: 'auto' }}
+            priority
           />
         </Box>
       </Box>

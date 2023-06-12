@@ -24,6 +24,7 @@ const HappyClient = ({ item }: HappyClientProps) => {
           src={item?.avatar}
           alt=""
           style={{ width: '100%', height: 'auto' }}
+          loading="lazy"
         />
       </Box>
       <Box

@@ -64,6 +64,7 @@ const TopCourses = ({ setShowSyllabusModal }: TopCoursesProps) => {
                 src={require('../../assets/data-analysis.png')}
                 alt=""
                 style={{ width: '100%', height: 'auto' }}
+                loading="lazy"
               />
             </Box>
             <Box sx={{ height: '100px', marginBottom: '1rem' }}>
@@ -120,6 +121,7 @@ const TopCourses = ({ setShowSyllabusModal }: TopCoursesProps) => {
                 src={require('../../assets/sec.png')}
                 alt=""
                 style={{ width: '100%', height: 'auto' }}
+                loading="lazy"
               />
             </Box>
             <Box sx={{ height: '100px', marginBottom: '1rem' }}>
@@ -177,6 +179,7 @@ const TopCourses = ({ setShowSyllabusModal }: TopCoursesProps) => {
                 src={require('../../assets/ui-ux.png')}
                 alt=""
                 style={{ width: '100%', height: 'auto' }}
+                loading="lazy"
               />
             </Box>
             <Box sx={{ height: '100px', marginBottom: '1rem' }}>
@@ -226,6 +229,7 @@ const TopCourses = ({ setShowSyllabusModal }: TopCoursesProps) => {
                 src={require('../../assets/product-management.png')}
                 alt=""
                 style={{ width: '100%', height: 'auto' }}
+                loading="lazy"
               />
             </Box>
             <Box sx={{ height: '100px', marginBottom: '1rem' }}>

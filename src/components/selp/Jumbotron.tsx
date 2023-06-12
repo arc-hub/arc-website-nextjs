@@ -5,9 +5,15 @@ import Image from 'next/image'
 
 type JumbotronProps = {
   setShowRegistrationModal: (val: boolean) => void
+  setShowModal: (val: boolean) => void
+  setCourse: (val: string) => void
 }
 
-const Jumbotron = ({ setShowRegistrationModal }: JumbotronProps) => {
+const Jumbotron = ({
+  setShowRegistrationModal,
+  setShowModal,
+  setCourse,
+}: JumbotronProps) => {
   return (
     <Box
       sx={{
@@ -66,6 +72,17 @@ const Jumbotron = ({ setShowRegistrationModal }: JumbotronProps) => {
             textAlign: { xs: 'center', sm: 'left' },
           }}
         >
+          {/* <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "#002E5F",
+              textTransform: "none",
+              padding: "0.5rem 3.5rem",
+            }}
+            onClick={() => setShowRegistrationModal(true)}
+          >
+            Apply Now
+          </Button> */}
           <Button
             variant="contained"
             sx={{
@@ -73,9 +90,12 @@ const Jumbotron = ({ setShowRegistrationModal }: JumbotronProps) => {
               textTransform: 'none',
               padding: '0.5rem 3.5rem',
             }}
-            onClick={() => setShowRegistrationModal(true)}
+            onClick={() => {
+              setShowModal(true)
+              setCourse('Software Engineering Leadership Programme')
+            }}
           >
-            Apply Now
+            Book a Slot
           </Button>
         </Box>
       </Box>
@@ -90,9 +110,10 @@ const Jumbotron = ({ setShowRegistrationModal }: JumbotronProps) => {
         }}
       >
         <Image
-          src={require('../../assets/jumbotron.png')}
+          src={require('../../assets/jumbotron.webp')}
           alt=""
           style={{ width: '100%', height: 'auto' }}
+          priority
         />
       </Box>
     </Box>

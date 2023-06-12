@@ -5,9 +5,10 @@ import { ourAcademy } from 'utils/data'
 
 type Section2Props = {
   setShowModal: (val: boolean) => void
+  setCourse: (val: string) => void
 }
 
-export const Section2 = ({ setShowModal }: Section2Props) => {
+export const Section2 = ({ setShowModal, setCourse }: Section2Props) => {
   const router = useRouter()
 
   return (
@@ -87,6 +88,7 @@ export const Section2 = ({ setShowModal }: Section2Props) => {
                   mr: { lg: '1.5rem' },
                   mb: { xs: '1.5rem', lg: '0rem' },
                   position: 'relative',
+                  cursor: 'default',
                 }}
               >
                 <Box
@@ -106,6 +108,7 @@ export const Section2 = ({ setShowModal }: Section2Props) => {
                     src={item.image}
                     alt=""
                     style={{ width: '100%', height: 'auto' }}
+                    loading="lazy"
                   />
                   <Box sx={{ height: '90px' }}>
                     <Typography
@@ -141,18 +144,24 @@ export const Section2 = ({ setShowModal }: Section2Props) => {
                       }}
                       onClick={() => {
                         if (item.keyword === 'SELP') {
-                          router.push('/courses/selp')
+                          // router.push('/courses/selp')
+                          setCourse('Software Engineering Leadership Programme')
+                          setShowModal(true)
                         }
 
                         if (item.keyword === 'SEF') {
-                          router.push('/courses/sef')
+                          //router.push('/courses/sef')
+                          setCourse('Software Engineering Foundation')
+                          setShowModal(true)
                         }
 
                         if (item.keyword === 'PM') {
+                          setCourse('Product Management')
                           setShowModal(true)
                         }
 
                         if (item.keyword === 'UI/UX') {
+                          setCourse('UI/UX')
                           setShowModal(true)
                         }
                       }}
@@ -178,18 +187,24 @@ export const Section2 = ({ setShowModal }: Section2Props) => {
                       }}
                       onClick={() => {
                         if (item.keyword === 'SELP') {
-                          router.push('/courses/selp')
+                          // router.push('/courses/selp')
+                          setCourse('Software Engineering Leadership Programme')
+                          setShowModal(true)
                         }
 
                         if (item.keyword === 'SEF') {
-                          router.push('/courses/sef')
+                          //router.push('/courses/sef')
+                          setCourse('Software Engineering Foundation')
+                          setShowModal(true)
                         }
 
                         if (item.keyword === 'PM') {
+                          setCourse('Product Management')
                           setShowModal(true)
                         }
 
                         if (item.keyword === 'UI/UX') {
+                          setCourse('UI/UX')
                           setShowModal(true)
                         }
                       }}

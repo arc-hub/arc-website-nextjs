@@ -107,6 +107,7 @@ const Layout = ({ children }: LayoutProps) => {
             position: 'relative',
             minHeight: '100vh',
             backgroundColor: '#FFFFFF',
+            color: '#000000',
           }}
         >
           <Toaster />

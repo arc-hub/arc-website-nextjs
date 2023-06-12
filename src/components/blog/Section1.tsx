@@ -59,6 +59,7 @@ export const Section1 = () => {
               src={require('../../assets/bimage1.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              priority
             />
           </Box>
           <Box
@@ -125,6 +126,7 @@ export const Section1 = () => {
               src={require('../../assets/bimage2.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              priority
             />
           </Box>
           <Box
@@ -201,6 +203,7 @@ export const Section1 = () => {
               src={require('../../assets/bimage3.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              priority
             />
           </Box>
           <Box
@@ -265,6 +268,7 @@ export const Section1 = () => {
               src={require('../../assets/bimage4.png')}
               alt=""
               style={{ width: '100%', height: 'auto' }}
+              priority
             />
           </Box>
           <Box

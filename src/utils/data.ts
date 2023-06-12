@@ -395,9 +395,9 @@ export const events = [
   {
     image: require('../assets/Frame 44093 (2).png'),
     title: 'Software Engineering Foundation',
-    date: '1st May 2023',
+    date: '',
     fee: 'Free',
-    note: 'Learn More',
+    note: 'Coming Soon!',
     keyword: 'SEF',
   },
   {
@@ -430,9 +430,9 @@ export const ourAcademy = [
   {
     image: require('../assets/data-analysis.png'),
     title: 'Software Engineering Foundation',
-    date: '1st May 2023',
+    date: 'Coming Soon',
     duration: '12 Weeks',
-    note: 'Click to register',
+    note: 'Reserve a slot',
     button: 'SEF',
     keyword: 'SEF',
   },
