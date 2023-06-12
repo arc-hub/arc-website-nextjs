@@ -18,7 +18,8 @@ const nextConfig = {
     return {
       '/': { page: '/' },
       '/blog': { page: '/blog' },
-      '/courses': { page: '/courses' },
+      '/courses/sef': { page: '/courses/sef' },
+      '/courses/selp': { page: '/courses/selp' },
       '/about_us': { page: '/about_us' },
       '/services': { page: '/services' },
       '/interviews': { page: '/interviews' },
