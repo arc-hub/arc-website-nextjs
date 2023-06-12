@@ -624,11 +624,16 @@ export const interviewerLinks = [
   },
   {
     label: 'Mr. Patrick',
-    value: 'Mr. Patrick - https://calendly.com/patrick_ikwu/sef-screening-call',
+    value: 'Mr. Patrick - https://meetings-eu1.hubspot.com/patrick-ikwu',
   },
   {
     label: 'Mr. Suleiman',
     value:
       'Mr. Suleiman - https://calendly.com/suleiman-garba/sef-screening-call',
+  },
+  {
+    label: 'Mr. Moses',
+    value:
+      'Mr. Moses - https://calendly.com/abai-moses/software-engineering-foundation-screening-call',
   },
 ]
