@@ -8,6 +8,9 @@ import { FaLongArrowAltLeft } from 'react-icons/fa'
 import { jobLevel, jobType } from 'utils/data'
 import { useState, useEffect, ChangeEvent } from 'react'
 import Job from 'components/talentSolution/jobs/Job'
+import Head from 'next/head'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Jobs = () => {
   const router = useRouter()
@@ -156,10 +159,12 @@ const Jobs = () => {
     filterData()
   }, [data, selectedRole, selectedLevel])
 
-  console.log({ data, selectedLevel, selectedRole, filteredData })
-
   return (
     <Box sx={{ margin: '0px', padding: '0px', cursor: 'default' }}>
+      <Head>
+        <title>ARC Digital | Talent Solution</title>
+      </Head>
+
       <Box sx={{ backgroundColor: '#FFFFFF' }}>
         <Navbar page="talent" textColor="#1A1F2B" />
 
@@ -308,24 +313,50 @@ const Jobs = () => {
             </Box>
           </Box>
 
-          <Box
-            sx={{
-              mx: 'auto',
-              gridColumn: { xs: 'span 1', sm: 'span 5', md: 'span 6' },
-              display: 'grid',
-              gridTemplateColumns: {
-                xs: '1fr',
-                sm: 'repeat(2, minmax(0, 1fr))',
-                lg: 'repeat(3, minmax(0, 1fr))',
-              },
-              gridGap: '1.5rem',
-              width: '100%',
-            }}
-          >
-            {filteredData?.map((job, index) => (
-              <Job job={job} key={index} page="all-jobs" />
-            ))}
-          </Box>
+          {isLoading && (
+            <Box
+              sx={{
+                mx: 'auto',
+                gridColumn: { xs: 'span 1', sm: 'span 5', md: 'span 6' },
+                display: 'grid',
+                gridTemplateColumns: {
+                  xs: '1fr',
+                  sm: 'repeat(2, minmax(0, 1fr))',
+                  lg: 'repeat(3, minmax(0, 1fr))',
+                },
+                gridGap: '1.5rem',
+                width: '100%',
+              }}
+            >
+              <Skeleton style={{ height: '230px', borderRadius: '8px' }} />
+              <Skeleton style={{ height: '230px', borderRadius: '8px' }} />
+              <Skeleton style={{ height: '230px', borderRadius: '8px' }} />
+              <Skeleton style={{ height: '230px', borderRadius: '8px' }} />
+              <Skeleton style={{ height: '230px', borderRadius: '8px' }} />
+              <Skeleton style={{ height: '230px', borderRadius: '8px' }} />
+            </Box>
+          )}
+
+          {data && (
+            <Box
+              sx={{
+                mx: 'auto',
+                gridColumn: { xs: 'span 1', sm: 'span 5', md: 'span 6' },
+                display: 'grid',
+                gridTemplateColumns: {
+                  xs: '1fr',
+                  sm: 'repeat(2, minmax(0, 1fr))',
+                  lg: 'repeat(3, minmax(0, 1fr))',
+                },
+                gridGap: '1.5rem',
+                width: '100%',
+              }}
+            >
+              {filteredData?.map((job, index) => (
+                <Job job={job} key={index} page="all-jobs" />
+              ))}
+            </Box>
+          )}
         </Box>
       </Box>
     </Box>

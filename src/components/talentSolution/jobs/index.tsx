@@ -6,6 +6,8 @@ import { fetcher } from 'api/fetcher'
 import { useRouter } from 'next/router'
 import { IsJob } from 'utils/interfaces'
 import Job from './Job'
+import Skeleton from 'react-loading-skeleton'
+import 'react-loading-skeleton/dist/skeleton.css'
 
 const Jobs = () => {
   const router = useRouter()
@@ -31,35 +33,60 @@ const Jobs = () => {
         Jobs Available
       </Typography>
 
-      <Box
-        sx={{
-          mt: '2rem',
-          mx: 'auto',
-          display: 'grid',
-          gridTemplateColumns: {
-            xs: '1fr',
-            sm: '1fr 1fr',
-            md: '1fr 1fr 1fr',
-            lg: '1fr 1fr 1fr 1fr',
-          },
-          gridGap: '1.5rem',
-          width: '100%',
-        }}
-      >
-        {data?.slice(0, 4).map((job, index) => (
-          <Job job={job} key={index} />
-        ))}
-      </Box>
-
-      <Box sx={{ display: 'flex', justifyContent: 'right', mt: '1.5rem' }}>
-        <Button
-          variant="text"
-          sx={{ color: '#FF7801', textTransform: 'none' }}
-          onClick={() => router.push('talent_solution/jobs')}
+      {isLoading && (
+        <Box
+          sx={{
+            mt: '2rem',
+            display: 'grid',
+            gridTemplateColumns: {
+              xs: '1fr',
+              sm: '1fr 1fr',
+              lg: '1fr 1fr 1fr 1fr',
+            },
+            gridGap: '1.5rem',
+            width: '100%',
+          }}
         >
-          View All
-        </Button>
-      </Box>
+          <Skeleton style={{ height: '230px', borderRadius: '8px' }} />
+          <Skeleton style={{ height: '230px', borderRadius: '8px' }} />
+          <Skeleton style={{ height: '230px', borderRadius: '8px' }} />
+          <Skeleton style={{ height: '230px', borderRadius: '8px' }} />
+        </Box>
+      )}
+
+      {data && (
+        <>
+          <Box
+            sx={{
+              mt: '2rem',
+              mx: 'auto',
+              display: 'grid',
+              gridTemplateColumns: {
+                xs: '1fr',
+                sm: '1fr 1fr',
+                md: '1fr 1fr 1fr',
+                lg: '1fr 1fr 1fr 1fr',
+              },
+              gridGap: '1.5rem',
+              width: '100%',
+            }}
+          >
+            {data?.slice(0, 4).map((job, index) => (
+              <Job job={job} key={index} />
+            ))}
+          </Box>
+
+          <Box sx={{ display: 'flex', justifyContent: 'right', mt: '1.5rem' }}>
+            <Button
+              variant="text"
+              sx={{ color: '#FF7801', textTransform: 'none' }}
+              onClick={() => router.push('talent_solution/jobs')}
+            >
+              View All
+            </Button>
+          </Box>
+        </>
+      )}
     </Box>
   )
 }
