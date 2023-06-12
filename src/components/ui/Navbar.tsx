@@ -159,8 +159,22 @@ const Navbar = ({ page, textColor }: NavbarProps) => {
             >
               SELP
             </MenuItem>
-            <MenuItem onClick={handleCourseClose}>Product Management</MenuItem>
-            <MenuItem onClick={handleCourseClose}>UI/UX</MenuItem>
+            <MenuItem
+              onClick={() => {
+                handleCourseClose()
+                router.push('/courses/product_management')
+              }}
+            >
+              Product Management
+            </MenuItem>
+            <MenuItem
+              onClick={() => {
+                handleCourseClose()
+                router.push('/courses/ui_ux')
+              }}
+            >
+              UI/UX
+            </MenuItem>
           </Menu>
 
           <Link href="/services">

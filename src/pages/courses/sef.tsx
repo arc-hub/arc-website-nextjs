@@ -26,6 +26,7 @@ const Sef = () => {
   const [showRegistrationModal, setShowRegistrationModal] =
     useState<boolean>(false)
   const [scrollIntoView, setScrollIntoView] = useState<boolean>(false)
+  const [course, setCourse] = useState<string>('')
 
   const faqRef = useRef<HTMLDivElement | null>(null)
 
@@ -56,7 +57,11 @@ const Sef = () => {
       </Head>
 
       {/**modals */}
-      <ReservationModal showModal={showModal} setShowModal={setShowModal} />
+      <ReservationModal
+        showModal={showModal}
+        setShowModal={setShowModal}
+        course={course}
+      />
       <SyllabusModal
         showSyllabusModal={showSyllabusModal}
         setShowSyllabusModal={setShowSyllabusModal}
@@ -76,7 +81,11 @@ const Sef = () => {
       <Box sx={{ backgroundColor: '#E6EAEF' }}>
         <Navbar page="course" textColor="#1A1F2B" />
 
-        <Jumbotron setShowRegistrationModal={setShowRegistrationModal} />
+        <Jumbotron
+          setShowRegistrationModal={setShowRegistrationModal}
+          setShowModal={setShowModal}
+          setCourse={setCourse}
+        />
       </Box>
 
       {/**clients */}
@@ -86,6 +95,8 @@ const Sef = () => {
       <ProgrammeDetails
         setShowSyllabusModal={setShowSyllabusModal}
         setShowRegistrationModal={setShowRegistrationModal}
+        setShowModal={setShowModal}
+        setCourse={setCourse}
       />
 
       {/**benefits */}

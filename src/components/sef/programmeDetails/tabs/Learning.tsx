@@ -3,7 +3,7 @@ import Box from '@mui/material/Box'
 
 const Learning = () => {
   return (
-    <Box>
+    <Box sx={{ color: '#000000' }}>
       <Box
         sx={{
           paddingLeft: {

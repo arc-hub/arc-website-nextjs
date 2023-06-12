@@ -395,9 +395,9 @@ export const events = [
   {
     image: require('../assets/Frame 44093 (2).png'),
     title: 'Software Engineering Foundation',
-    date: '1st May 2023',
+    date: '',
     fee: 'Free',
-    note: 'Learn More',
+    note: 'Coming Soon!',
     keyword: 'SEF',
   },
   {
